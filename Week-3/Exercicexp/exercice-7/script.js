@@ -1,6 +1,6 @@
 let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-let société="";
-for(let i in names){
-    société=société+names[i];
-}
-console.log(société.sort);
+let societesecret=names.sort();
+let jonction=societesecret.join(" ");
+let societe=jonction.match(/\b(\w)/g);
+
+console.log(societe.join(""));
