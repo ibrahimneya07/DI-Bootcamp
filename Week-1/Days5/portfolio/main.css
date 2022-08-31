@@ -1,0 +1,138 @@
+* { box-sizing:border-box; }
+.collapse{
+    background-color: orange;
+    color: white;
+}
+h3{
+    color: orange;
+}
+button{
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+.elements{
+    position: relative;
+    left: 200px;
+    top: 70px;
+
+}
+.contenu{
+    background-image: url(headerback.jpg);
+    height: 300px;
+}
+h2{
+    text-align: center;
+    color: orange;
+}
+.ranger1,.ranger2,.Blog{
+    display: flex;
+}
+img{
+    height: 200px;
+    width: 300px;
+}
+.ranger1{
+    position: relative;
+    top: 20px;
+    left: 190px;
+}
+.ranger2{
+    position: relative;
+    top: 40px;
+    left: 190px;
+}
+.image2{
+    position: relative;
+    left: 20px;
+}
+.image3{
+    position: relative;
+    left: 40px;
+}
+.image5{
+    position: relative;
+    left: 60px;
+}
+.Blog{
+    position: relative;
+    top: 20px;
+}
+.blog{
+    position: relative;
+    top: 90px;
+    left: 190px;
+}
+.mon{
+    text-align: center;
+}
+.Our{
+    position: relative;
+    top: 150px;
+}
+.Team{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+.nom{
+    position: relative;
+    left: 80px;
+    background-color: orange;
+    color: white;
+    border-radius: 20px 40px;
+    width: 150px;
+}
+h4{
+    color: orange;
+}
+.footer{
+    display: flex;
+    position: relative;
+    top: 250px;
+}
+.commentaire{
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+.champ{
+    position: relative;
+    left: 300px;
+}
+input{
+    width: 500px;
+}
+.send{
+    width: 500px;
+    text-align: center;
+}
+body{
+    background-color: aliceblue;
+}
+.About{
+    border-radius: 300px;
+    position: relative;
+    left: 100px;
+}
+.ibra{
+    border-radius: 360px;
+}
+.tout{
+    display: flex;
+}
+.me{
+    position: relative;
+    top: 50px;
+    left: 190px;
+}
+h5{
+    color: green;
+}
+.bar{
+    color: green;
+    border: 3px solid;
+    position: relative;
+    left: 120px;
+}

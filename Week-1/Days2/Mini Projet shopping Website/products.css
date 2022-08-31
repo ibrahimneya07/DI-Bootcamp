@@ -1,0 +1,31 @@
+img {
+    width: 300px;
+    height: 400px;
+    border-radius: 5%;
+}
+.ranger1{
+    display: flex;
+    margin-left: 40px;
+}
+.produit2 {
+    position: relative;
+    left: 20px;
+}
+.produit3 {
+    position: relative;
+    left: 40px;
+}
+.produit4 {
+    position: relative;
+    left: 60px;
+}
+.real-price{
+    color: green;
+}
+.barré {
+    text-decoration: line-through;
+}
+.commentaire {
+    position: relative;
+    text-align: center;
+}

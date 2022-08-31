@@ -1,0 +1,78 @@
+header,footer {
+    display: flex;
+    text-align: center;
+    background-color: aliceblue;
+}
+h5{
+    margin-left: 10%;
+}
+h2{
+    position: relative;
+    top: 70px;
+    color: white;
+}
+#valide {
+    margin-left: 70%;
+    height: 0%;
+    margin-top: 1%;
+    background-color: blue;
+}
+#valide1{
+    background-color: blue;
+    color: white;
+}
+div{
+        margin-top: auto;
+    background-size: ;
+    text-align: center;
+}
+footer{
+    margin-left: auto;
+    margin-top: auto;
+}
+header{
+    margin-bottom: auto;
+}
+#section1{
+    margin-left: 20%;
+
+}
+#section2{
+    margin-left: 2%;
+}
+#section3{
+    margin-left: 2%;
+}
+#background {
+    background-image:url(soleil.jpg);
+    padding: 9px;
+    height: 400px;
+}
+.fa-display{
+    color: blue;
+    font-size: 5em;
+    margin-top: 20%;
+}
+.fa-regular{
+    color: blue;
+    font-size: 5em;
+    margin-top: 20%;
+}
+.fa-layer-group{
+    color: blue;
+    font-size: 5em;
+    margin-top: 20%;
+}
+.sign-up{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 6px;
+    margin: 2px;
+}
+p{
+    position: relative;
+    top: 70px;
+}
+

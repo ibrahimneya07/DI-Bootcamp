@@ -1,0 +1,14 @@
+li{
+    display: inline;
+    float: left;
+}
+a {
+    display: block;
+    padding: 10px;
+    
+}
+#background {
+    text-align: center;
+    background-image: url(pic.png);
+}
+  

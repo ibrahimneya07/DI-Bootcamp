@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    background-color: black;
+    height: 30px;
+}
+a{
+    color: white;
+}
+#valide {
+    margin-left: 50px;
+    color: white;
+    position: relative;
+    top: 5px;
+}
+#valide1{
+    margin-left: 1050px;
+    color: white;
+    position: relative;
+    top: 5px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  

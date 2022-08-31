@@ -1,0 +1,86 @@
+* { box-sizing:border-box; }
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 200px;
+    top: 115px;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 250px;
+    bottom: 140px;
+}
+.un,.deux,.trois,.quatre{
+    
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.deux{
+    position: relative;
+    top: 2px;
+}
+.trois{
+    position: relative;
+    top: 4px;
+}
+.quatre{
+    position: relative;
+    top: 6px;
+}
+
+.cinq,.six,.sept,.huit{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.six{
+    position: relative;
+    left: 20px;
+}
+.sept{
+    position: relative;
+    left: 40px;
+}
+.huit{
+    position: relative;
+    left: 60px;
+}
+
+.neuf,.dix,.onze,.douze{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+}
+
+.dix{
+    position: relative;
+    top:  2px;
+}
+.onze{
+    position: relative;
+    top:  4px;
+}
+.douze{
+    position: relative;
+    top:  6px;
+}
+hr{
+    position: relative;
+    bottom: 130px;
+}

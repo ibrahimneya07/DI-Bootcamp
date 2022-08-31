@@ -1,0 +1,50 @@
+* { box-sizing:border-box; }
+.row{
+    position: relative;
+    left: 390px;
+}
+.btn-primary{
+    background-color: green;
+    color: white;
+}
+.collapse{
+    height: 50px;
+    color: white;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+.nav-link,.dropdown{
+    position: relative;
+    left: 90px;
+}
+.contenu{
+    position: relative;
+    background-color: aliceblue;
+    height: 200px;
+}
+.blue,.txt{
+    position: relative;
+    left: 90px;
+}
+.footer{
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+.details{
+    background-color: white;
+}
+.section1{
+    position: relative;
+    left: 90px;
+}
+.section2{
+    position: relative;
+    left: 110px;
+}
+.section3{
+    position: relative;
+    left: 130px;
+}

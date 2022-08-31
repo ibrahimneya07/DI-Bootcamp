@@ -1,0 +1,30 @@
+span {
+     background-color: yellow;
+}
+h4 {
+    text-decoration: underline;
+}
+img {
+    height: 80%;
+    width: 30% ;
+    border-style: groove;
+    border-width: 15px;
+    border-color: brown;
+}
+div {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    color: red;
+    border-style: solid;
+}
+th {
+    border: 1px solid;
+}
+td {
+    border: 5px solid;
+}
+table {
+    text-align: center;
+}
