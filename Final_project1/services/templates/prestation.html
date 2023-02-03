@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+<h1> Bienvenue cher prestateur </h1>
+<div class="row">
+
+    <p>Nom d'utilisateur : {{ request.user.username }}</p>
+    <p>Email : {{ request.user.email }}</p>
+    <p>tel : {{ request.user.tel }}</p>
+    <p>Role : {{ request.user.get_role }}</p>
+    <p>Profil : 
+        <ul>
+        {% for p in request.user.profiles.all %}
+            <li>{{ p.nomPr }}</li>
+        {% empty %}
+            Pas de profil
+        {% endfor %}
+        </ul>    
+    </p>
+
+  {% for personne in personnes %}
+<div class="col-md-3">
+  <div class="card" style="width:18rem;">
+    {% if personne.image %}
+    <img src="{{ personne.image.url }}" class=" card-img-top" alt="{{ personne.image }}">
+    {% else %}
+    <h3>No image</h3>
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-description">{{ personne.lastname }} <br> {{ personne.firstname }}</h5>
+      <h5 class="card-title">{{ personne.description }}</h5>
+      
+      <a href="#" class="btn btn-primary">Add to card</a>
+    </div>
+  </div>
+</div>
+  {% endfor %}
+</div>
+
+{% endblock%}

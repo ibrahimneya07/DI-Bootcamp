@@ -1,0 +1,86 @@
+{% extends 'basetpl.html' %}
+
+{% load static %}
+{% block link%}
+
+{% endblock%}
+
+
+{% block content %}
+
+<style>
+    .contenu {
+        width: 80%;
+        height: 70vh;
+        margin: 70px auto;
+        box-shadow: 0px 0px 8px #03224c24;
+        border-radius: 25px;
+        padding: 25px;
+    }
+
+    .contenu .other {
+        background-color: #79D2E6;
+        padding: 10px 25px;
+        width: fit-content;
+        color: black;
+    }
+
+    .contenu .me {
+        background-color: #79D2E645;
+        padding: 10px 25px;
+        width: fit-content;
+        color: black;
+        margin-left: auto;
+    }
+
+    .contenu .name {
+        text-align: center;
+    }
+
+    .inp-msg {
+        flex: 1;
+        margin-right: 15px;
+    }
+
+    .inp-msg-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .discussions {
+        height: 65%;
+        overflow: auto;
+        margin-bottom: 3%;
+    }
+</style>
+
+
+<div class="contenu">
+    <h2 class="name">{{userp.first_name}}</h2>
+    <div class="discussions" id="all-discussions">
+        {% for discussion in messages %}
+
+        {% if discussion.sender == request.user %}
+        <p class="me">{{request.user}}: {{discussion.message}}</p>
+        {% else %}
+        <p class="other">{{userp.first_name}}: {{discussion.message}}</p>
+        {% endif %}
+
+
+        {% endfor %}
+    </div>
+
+    <form action="" method="post" class="row">
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{user.id}}">
+        <div class="inp-msg-group">
+            <input type="text" placeholder="Ecrire votre message ici ..." class="inp-msg form-control" name="message">
+            <input type="submit" class="btn btn-success" value="Envoyer">
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById("all-discussions").scrollTo(0, document.getElementById("all-discussions").scrollHeight);
+</script>
+{% endblock%}

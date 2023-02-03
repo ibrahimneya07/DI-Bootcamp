@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block link%}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+{% endblock%}
+
+
+{% block content %}
+<div class="header">
+  <div class="text">
+  <h1>Bienvenue sur HELP-ME, <br>
+    rien que des services <br> pour tous vos besoins.
+  </h1>
+  </div>
+
+  <div class="photo">
+
+  </div>
+</div>
+
+<div class="categories">
+    <h1 align="center">Parcourez nos catégories</h1>
+    <div class="icone">
+      <form action="graphiste.html" class="graphe"><i class="fa-solid fa-palette"></i>
+        <h2 class="deplace">Design & Graphisme</h2>
+      </form>
+      <form action="developpement.html" class="graphe1"><i class="fa-solid fa-code"></i>
+        <h2 class="deplace1">Site & Développement</h2>
+      </form>
+    </div>
+</div>
+
+<div class="motivation">
+  <div class="image">
+    
+  </div>
+  <h1 class="trouver" align="center">Trouvez le prestataire qui <br> répondra à vos besoins</h1>
+  <form action=""><button class="boutton">Comment ça marche?</button></form>
+  <i class="fa-solid fa-euro-sign"></i>
+
+</div>
+
+<div class="choix">
+  <ol class="choix1">
+    <h1><li>Choisissez un service</li></h1>
+    <h1><li>Rentrer en contact</li></h1>
+    <h1><li class="souligner">Récupérez votre commande</li></h1>
+  </ol>
+</div>
+
+<h1 class="selection" align="center" >Nos sélections exclusives</h1>
+
+<div class="row row-cols-md-3  ml-5 mt-1" style="width: 900px;">
+  {% for personne in personne %}
+  <div class="card ">
+    <div class="card-body">
+      {% if personne.profile_photo %}
+    <img src="{{personne.profile_photo.url}}" class=" card-img-top" alt="{{ personne.profile_photo }}">
+     {% endif %} 
+     <h5 class="card-description">{{ personne.last_name }} <br> {{ personne.first_name }}</h5>
+      <h5 class="card-title">{{ personne.description }}</h5>
+      
+      <a href="{% url 'Details' personne.id %}" class="btn btn-primary">Voir le Profil</a>
+    </div>
+  </div>
+  {% endfor%}
+</div>
+
+<div class="pied">
+  <h1 class="pied1">Proposez gratuitement <br> vos talents à de nouveaux <br> clients !</h1>
+  <div class="image1">
+
+  </div>
+  <a href="{% url 'signUp' %}"><button class="boutton1">Devenir prestataire</button></a>
+</div>
+{% endblock%}

@@ -1,0 +1,33 @@
+{% extends 'basetpl.html' %} {% block content %} 
+<style>
+  .dsc {
+    padding: 10px 25px;
+    box-shadow: 0 0 8px #03224c88;
+    width: fit-content;
+    margin: 12px 10%;
+  }
+</style>
+<br>
+<br>
+<br>
+<br>
+{% for d in discussion %} 
+{% if d.sender == request.user %}
+<a href="{% url 'Discussion' d.receiver.id  %}">
+  <p class="dsc">
+    <b>{{ d.receiver.first_name }} {{ d.receiver.last_name }}</b><br />
+    {{ d.message }}
+  </p>
+</a>
+{% else %}
+<a href="{% url 'Discussion' d.sender.id %}">
+  <p class="dsc">
+    <b>{{ d.sender.first_name }} {{ d.sender.last_name }}</b><br />
+    {{ d.message }}
+  </p>
+</a>
+{% endif %}
+<br />
+
+{% endfor %}
+{%endblock%}
